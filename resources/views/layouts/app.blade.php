@@ -11,15 +11,15 @@
 
 <body>
     <!-- Incluir navbar -->
-    @include('templates.navegacion')
+    <div class="min-h-screen">
+        @include('templates.navegacion')
 
-    <!-- Contenido principal -->
-    <main class="container-fluid">
+        <!-- Contenido principal -->
         @yield('content')
-    </main>
 
-    <!-- Incluir footer -->
-    @include('templates.footer')
+        <!-- Incluir footer -->
+        @include('templates.footer')
+    </div>
 
     <!-- Scripts adicionales -->
     @stack('scripts')
