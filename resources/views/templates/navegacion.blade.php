@@ -1,14 +1,14 @@
  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
      <div class="container mx-auto px-4 md:px-6 py-4">
          <div class="flex items-center justify-between">
-             <a class="flex items-center" href="#">
+             <a class="flex items-center" href="/">
                  <h1 class="text-xl font-bold tracking-tight">HELIOS GUARD</h1>
              </a>
              <nav class="hidden md:flex items-center space-x-4">
-                 <a class="navbar-link" href="">Inicio</a>
-                 <a class="navbar-link" href="">Productos</a>
-                 <a class="navbar-link" href="">Colecciones</a>
-                 <a class="navbar-link" href="">Nosotros</a>
+                 <a class="navbar-link" href="/">Inicio</a>
+                 <a class="navbar-link" href="/productos">Productos</a>
+                 <a class="navbar-link" href="/collections">Colecciones</a>
+                 <a class="navbar-link" href="/about_us">Nosotros</a>
              </nav>
              <div class="hidden md:flex items-center space-x-4">
                  <button class="border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">

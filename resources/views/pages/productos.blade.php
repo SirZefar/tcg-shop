@@ -1,11 +1,11 @@
 @extends('layouts.app')
-@section('title' , 'Inicio - Helios Guard')
+@section('title' , 'Helios Guard - Productos')
 
 @section('content')
 <div class="bg-white">
     <div class="container mt-16 mx-auto px-4 py-8">
         <div class="mb-8">
-            <h1 class="text-3xl font-bold mb-4">Todas las cartas</h1>
+            <h1 class="text-3xl font-bold mb-4">Todas los productos</h1>
             <p class="text-gray-400">
                 Explorar nuestra colección de cartas TCG y encuentra tu próxima adquisición.
             </p>
@@ -70,79 +70,90 @@
                                 <span class="ml-2 text-gray-700">Magic: The Gathering</span>
                             </label>
                         </div>
-                        <!-- Filtro: Rareza -->
-                        <div class="mb-6 pb-4 border-b border-gray-200">
-                            <h2 class="text-xl font-semibold mb-3 text-gray-800">Rareza</h2>
-                            <div class="space-y-2">
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
-                                    <span class="ml-2 text-gray-700">Ultra Raro</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
-                                    <span class="ml-2 text-gray-700">Raro</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
-                                    <span class="ml-2 text-gray-700">Mítico</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
-                                    <span class="ml-2 text-gray-700">Promocional</span>
-                                </label>
-                            </div>
+                    </div>
+                    <!-- Filtro: Rareza -->
+                    <div class="mb-6 pb-4 border-b border-gray-200">
+                        <h2 class="text-xl font-semibold mb-3 text-gray-800">Rareza</h2>
+                        <div class="space-y-2">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2 text-gray-700">Ultra Raro</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2 text-gray-700">Raro</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2 text-gray-700">Mítico</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2 text-gray-700">Promocional</span>
+                            </label>
                         </div>
+                    </div>
 
-                        <!-- Filtro: Condición -->
-                        <div class="mb-6 pb-4 border-b border-gray-200">
-                            <h2 class="text-xl font-semibold mb-3 text-gray-800">Condición</h2>
-                            <div class="space-y-2">
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
-                                    <span class="ml-2 text-gray-700">Mint</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
-                                    <span class="ml-2 text-gray-700">Near Mint</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
-                                    <span class="ml-2 text-gray-700">Excellent</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
-                                    <span class="ml-2 text-gray-700">Good</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
-                                    <span class="ml-2 text-gray-700">Played</span>
-                                </label>
-                            </div>
+                    <!-- Filtro: Condición -->
+                    <div class="mb-6 pb-4 border-b border-gray-200">
+                        <h2 class="text-xl font-semibold mb-3 text-gray-800">Condición</h2>
+                        <div class="space-y-2">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2 text-gray-700">Mint</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2 text-gray-700">Near Mint</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2 text-gray-700">Excellent</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2 text-gray-700">Good</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                <span class="ml-2 text-gray-700">Played</span>
+                            </label>
                         </div>
+                    </div>
 
-                        <!-- Filtro: Precio -->
-                        <div class="mb-6">
-                            <h2 class="text-xl font-semibold mb-3 text-gray-800">Precio</h2>
-                            <div class="space-y-4 mt-2">
-                                <input type="range" step="100" class="my-4 h-full bg-primary relative flex w-full touch-none select-none items-center" min="0" max="10000">
-                                <div class="flex items-center justify-center">
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                    <!-- Filtro: Precio -->
+                    <div class="mb-6 pb-4 border-b border-gray-200">
+                        <h2 class="text-xl font-semibold mb-3 text-gray-800">Precio</h2>
+                        <div class="space-y-4 mt-2">
+                            <input type="range" step="100" class="my-4 h-full bg-primary relative flex w-full touch-none select-none items-center" min="0" max="10000">
+                            <div class="flex items-center justify-between">
+                                <span>Min</span>
+                                <span>Max</span>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="mb-6 pb-4 border-b border-gray-200 flex justify-center items-center">
+                        <button class="btn">Filtrar</button>
                     </div>
                 </div>
             </div>
 
             <div class="lg:col-span-3">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <livewire:product-card id=1 productImg="https://static.tcgcollector.com/content/images/58/1f/7f/581f7f4116cba3a6600d066f40d017ff1c2198f8b9604d2d81f3cca3fd472312.jpg" price=362.81  nombre="Charizard Holo 1st Edition - Base Set"  categoria="Pokémon TCG"  rareza="Ultra Raro"/>
-                    <livewire:product-card id=3 productImg="https://static.tcgcollector.com/content/images/d7/4c/9e/d74c9ebe976c7d77cdd547a302f6eaad20d6dae5b9d0466ee3a4c454140f1e56.webp" price=265  nombre="Cynthia's Garchomp ex"  categoria="Pokémon TCG"  rareza="Ultra Raro"/>
-                    <livewire:product-card id=5 productImg="https://static.tcgcollector.com/content/images/b1/f3/bb/b1f3bbc41568dc5ff058a1bdebeeea88700f4ea828397b6603f451c99aa83fad.jpg" price=303  nombre="Charizard ex"  categoria="Pokémon TCG"  rareza="Ultra Raro"/>
-                    <livewire:product-card id=2 productImg="https://static.tcgcollector.com/content/images/b8/32/5b/b8325b8c2690ea696654e54824c24faac762f3e44a112312b6179afbb2d6fd27.jpg" price=149  nombre="Gardevoir ex"  categoria="Pokémon TCG"  rareza="Ultra Raro"/>
+                    @foreach ($products as $product)
+                    <livewire:product-card
+                        wire:key="$product->id"
+                        :id="$product->id"
+                        :productImg="$product->gallery_path"
+                        :nombre="$product->name"
+                        :categoria="$product->category->category"
+                        :price="$product->selling_price"
+                        :rareza="@isset($product->rarity->rarity) ? $product->rarity->rarity : $product->product_type" />
+                    @endforeach
                 </div>
             </div>
+            <div class="lg:col-span-3">{{ $products->links() }}</div>
         </div>
     </div>
 </div>
