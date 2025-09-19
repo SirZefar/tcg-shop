@@ -27,7 +27,7 @@ class SetSeeder extends Seeder
             ['set' => 'Paradox Rift', 'release_date' => '2023-11-03' , 'abbreviation' => 'PAR'],
             ['set' => 'Paldean Fates', 'release_date' => '2024-01-26' , 'abbreviation' => 'PAF'],
             ['set' => 'Temporal Forces', 'release_date' => '2024-03-22' , 'abbreviation' => 'TEF'],
-            ['set' => 'Twilight Masquerade', 'release_date' => '2024-05-2024' , 'abbreviation' => 'TWM'],
+            ['set' => 'Twilight Masquerade', 'release_date' => '2024-05-24' , 'abbreviation' => 'TWM'],
             ['set' => 'Shrouded Fable', 'release_date' => '2024-08-02' , 'abbreviation' => 'SFA'],
             ['set' => 'Stellar Crown', 'release_date' => '2024-09-13' , 'abbreviation' => 'SCR'],
             ['set' => 'Surging Sparks', 'release_date' => '2024-11-08' , 'abbreviation' => 'SSP'],
