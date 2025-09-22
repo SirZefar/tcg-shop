@@ -23,11 +23,12 @@
                 </div>
             </div>
             <div class="relative h-[400px] md:h-[500px] lg:h-[600px]">
-                <div class="absolute inset-0 transition-all duration-700 ease-in-out transform">
+                <div class="absolute inset-0 transition-all duration-700 ease-in-out transform hover:rotate-5 hover:scale-110">
                     <div class="relative h-full w-full">
-                        <img class="h-full w-full object-contain tcg-card-shadow rounded-lg" src="" alt="">
+                        <img class="h-full w-full object-contain shadow-[0_10px_25px_-15px_rgba(0,0,0,0.3)] rounded-lg" src="{{ asset('assets/img/banners/banner_700x600.png') }}" alt="">
                         <div class="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-lg"></div>
                     </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-100/70 to-transparent"></div>
                 </div>
             </div>
         </div>

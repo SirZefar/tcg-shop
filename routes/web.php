@@ -1,11 +1,10 @@
 <?php
 
+use App\Http\Controllers\Home;
 use App\Http\Controllers\Product;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function(){
-    return view('pages.home');
-})->name('home');
+Route::get('/', [Home::class, 'index'])->name('home');
 
 Route::get('/productos' , [Product::class , 'index']);
 

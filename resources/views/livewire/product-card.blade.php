@@ -1,6 +1,6 @@
 <div class="animate-fade-in">
     <a class="group bloc">
-        <div class="relative overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 card-hover">
+        <div class="relative overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 ease-out hover:translate-y-[-5px] hover:shadow-xl">
             <div class="relative aspect-[3/4] overflow-hidden bg-gray-100">
                 <img class="absolute inset-0 h-full w-full object-contain transition-transform duration-500 scale-100" src="{{asset($productImg)}}" alt="">
                 <span class="absolute top-2 left-2 bg-black/80 text-white text-xs px-2 py-1 rounded">{{ $rareza }}</span>
