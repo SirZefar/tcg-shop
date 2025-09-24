@@ -124,16 +124,18 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                @if (@isset($related))
                 @foreach ($related as $relate)
                 <livewire:product-card
                     wire:key="$relate->id"
-                    :id="$relate->id"
+                    :productId="$relate->id"
                     :productImg="$relate->gallery_path"
                     :nombre="$relate->name"
                     :categoria="$relate->category->category"
                     :price="$relate->selling_price"
                     :rareza="@isset($relate->rarity->rarity) ? $relate->rarity->rarity : $relate->product_type" />
                 @endforeach
+                @endif
             </div>
         </div>
     </main>

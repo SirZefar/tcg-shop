@@ -21,7 +21,11 @@ class Product extends Controller
 
     private function getRelatedProducts($set_id, $category_id){
         $products = pm::with(['category' , 'condition' , 'set' , 'rarity' , 'inventory'])->where('set_id' , $set_id)->where('category_id' , $category_id)->get();
-        return $products->random(2);
+        try {
+            return $products->random(2);
+        } catch (\Throwable $th) {
+            return null;
+        }
     }
 
 }

@@ -6,7 +6,7 @@
                 <span class="absolute top-2 left-2 bg-black/80 text-white text-xs px-2 py-1 rounded">{{ $rareza }}</span>
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center hover:opacity-100 opacity-0 transition-opacity duration-300">
                     <div class="flex gap-2">
-                        <button class="h-10 w-10 rounded-full bg-white text-black hover:bg-white/90 hover:cursor-pointer" wire:click="addToFav">
+                        <button class="h-10 w-10 rounded-full bg-white text-black hover:bg-white/90 hover:cursor-pointer" wire:click="$js.addToFav">
                             <span class="h-4 w-4">♥️</span>
                             <span class="sr-only">Añadir a favoritos</span>
                         </button>
@@ -14,7 +14,7 @@
                             <span class="h-4 w-4">🛒</span>
                             <span class="sr-only">Añadir al carrito</span>
                         </button>
-                        <a href={{ Route('producto' , ['id' => $id]) }} >
+                        <a href={{ Route('producto' , ['id' => $productId]) }}>
                             <button class="h-10 w-10 rounded-full bg-white text-black hover:bg-white/90 hover:cursor-pointer">
                                 <span class="h-4 w-4">👁️‍🗨️</span>
                                 <span class="sr-only">Ver detalles</span>
@@ -37,3 +37,21 @@
         </div>
     </a>
 </div>
+
+@script
+<script>
+    $js('addToFav' , ()=> {
+        let favList = localStorage.getItem('favList');
+        
+        if (!favList) {
+            localStorage.setItem('favList' , JSON.stringify([$wire.productId,]));
+        }
+
+        if (favList) {
+            const list = JSON.parse(favList);
+            let newList = list.filter(idProd => idProd !== $wire.productId);
+            
+        }
+    })
+</script>
+@endscript

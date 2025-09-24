@@ -144,7 +144,7 @@
                     @foreach ($products as $product)
                     <livewire:product-card
                         wire:key="$product->id"
-                        :id="$product->id"
+                        :productIdid="$product->id"
                         :productImg="$product->gallery_path"
                         :nombre="$product->name"
                         :categoria="$product->category->category"

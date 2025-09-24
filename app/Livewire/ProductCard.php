@@ -2,12 +2,13 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 class ProductCard extends Component
 {
 
-    public $id;
+    public $productId;
     public $nombre;
     public $rareza;
     public $categoria;
@@ -15,11 +16,11 @@ class ProductCard extends Component
     public $productImg;
     
     public function addToFav(){
-        return $this->id;
+        return $this->productId;
     }
 
     public function addToCart(){
-        return $this->id;
+        return $this->productId;
     }
 
     public function render()
