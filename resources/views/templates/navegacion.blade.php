@@ -2,7 +2,7 @@
      <div class="container mx-auto px-4 md:px-6 py-4">
          <div class="flex items-center justify-between">
              <a class="flex items-center" href="/">
-                 <h1 class="text-xl font-bold tracking-tight">HELIOS GUARD</h1>
+                 <h1 class="text-xl font-bold tracking-tight">Tienda Online</h1>
              </a>
              <nav class="hidden md:flex items-center space-x-4">
                  <a class="navbar-link" href="/">Inicio</a>
