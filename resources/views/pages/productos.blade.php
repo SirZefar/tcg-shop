@@ -43,7 +43,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div class="hidden lg:block">
-                <div class="bg-white rounded-lg border p-4 sticky top-4">
+                <div class="bg-white rounded-lg shadow-md border border-[#E5E5E5] p-4 sticky top-4">
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="font-medium flex items-center gap-2">
                             <span class="h-4 w-4">

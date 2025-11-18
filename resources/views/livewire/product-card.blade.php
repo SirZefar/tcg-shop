@@ -12,7 +12,7 @@
                     <div class="flex gap-2">
                         <button
                             class="h-10 w-10 rounded-full bg-white text-black hover:bg-white/90 hover:cursor-pointer"
-                            wire:click="$js.addToFav">
+                            wire:click="addToFav">
                             <span class="h-4 w-4">♥️</span>
                             <span class="sr-only">Añadir a favoritos</span>
                         </button>
@@ -72,6 +72,9 @@
                      localStorage.setItem('favList', JSON.stringify(newList));
                 }
             }
+
+
+            console.log(favList);
         })
     </script>
 @endscript

@@ -1,5 +1,5 @@
         <!-- Footer paginas -->
-        <footer class="bg-[#F9FAFB] py-12">
+        <footer class="bg-[#F9FAFB] py-12 w-full">
             <div class="container mx-auto px-4 md:px-6">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>

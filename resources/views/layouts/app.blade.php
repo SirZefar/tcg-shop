@@ -16,7 +16,7 @@
 
         <!-- Contenido principal -->
         @yield('content')
-
+        
         <!-- Incluir footer -->
         @include('templates.footer')
     </div>
