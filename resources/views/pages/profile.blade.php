@@ -30,11 +30,23 @@
 
         <!-- Contenido -->
         <div class="mt-6">
-            <div id="tab-1" class="tab-panel">
+            <div id="tab-1" class="tab-panel bg-gray-950/5 px-4 rounded w-2/3 shadow-md h-2/3">
                 <h4 class="text-lg font-semibold">Resumen general</h4>
-                <div class="my-2 border rounded w-2/3 h-80 flex flex-col">
-                    <div class="flex flex-col justify-between">
-                        <button>Editar</button>
+                <div class="flex flex-row justify-between">
+                    <h2>Informacion Personal</h2>
+                    <button>Editar</button>
+                </div>
+                <div class="h-80 flex flex-col justify-center">
+                    <div class="flex flex-row items-center">
+                        <div class="my-2 ms-5 rounded-full w-36 h-36 bg-gray-500/25 flex flex-col text-center justify-center">
+                            <h1 class="">MG</h1>
+                        </div>
+                        <div class="my-2 ms-5">
+                            <label for="">Nombre</label>
+                            <p>Marco Antonio Garate Armenta</p>
+                            <label for="">Telefono</label>
+                            <p>66-92-05-37-88</p>
+                        </div>
                     </div>
                 </div>
             </div>
